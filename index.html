@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Parcial 1</title>
+    <link type= "text/css" rel = "stylesheet" href = "./css/estilos.css"/>
+    <script src= "./js/funciones.js"></script>
+</head>
+<body>
+    <div class = "spinner" id = "idSpinner" hidden>
+        <img src = "./img/loading_spinner.gif" id = "imgSpinner" class = "image">
+    </div>
+    <div class = "contenedor" id = "contenedorId" hidden>
+        <div class = "divCerrar">
+            <button id = "btnCerrar" class = "opcionRojo">x</button>
+        </div>
+        <input type="hidden" id= "idInput">
+        <br>
+        <label for="fname">Nombre</label>
+        <br>
+        <input type= "text" id= "fname" class= "sinError" name= "nombre">
+        <br>
+        <br>
+        <label for="fname">Cuatrimestre</label>
+        <br>
+        <select id="cuatrimestre" name="cuatri" disabled>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>
+        <br>
+        <br>
+        <label for="tname">Turno</label>
+        <br>
+        <label for="mname">Mañana</label>
+        <input type="radio" name= "btnRadio"  id= "tMañana" value= "Mañana" class= "sinError"></input>
+        <label for="nname">Noche</label>
+        <input type="radio" name= "btnRadio"  id= "tNoche" value= "Noche" class= "sinError"></input>
+        <br>
+        <br>
+        <label for="lname">Fecha Final</label>
+        <br>
+        <input type="date" id="fechaMateria" name="birthday" class= "sinError">
+        <br>
+        <div class= "divBotones">
+        <button id = "btnModificar" class = "opcionVerde">Modificar</button>
+        <button id = "btnEliminar" class = "opcionRojo">Eliminar</button>
+        <br>
+        </div>
+    </div>
+    <h2>Lista de materias</h2>
+    <table id= "tabla" >
+        <thread>
+            <tr>
+                <th hidden>ID</th>
+                <th>Nombre</th>
+                <th>Cuatrimestre</th>
+                <th>Turno</th>
+                <th>Fecha Final</th>
+            </tr>
+        </thread>
+        <tbody id = "tCuerpo">
+        </tbody>
+    </table>
+</body>
+</html>
